@@ -6,6 +6,7 @@ import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { RegisterPageComponent } from './pages/register-page/register-page.component';
 import { MaterialModule } from '../material/material.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,9 +16,12 @@ import { MaterialModule } from '../material/material.module';
     RegisterPageComponent,
   ],
   imports: [
+    FormsModule,
     AuthRoutingModule,
     CommonModule,
     MaterialModule,
+    ReactiveFormsModule
+
   ]
 })
 export class AuthModule { }

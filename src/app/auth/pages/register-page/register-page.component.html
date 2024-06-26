@@ -1,27 +1,28 @@
 <div class="flex flex-column">
   <span class="text-lg mb-4">Registro</span>
-  <mat-form-field>
-    <mat-label>Usuario</mat-label>
-    <input type="text" matInput placeholder="Nombre de usuario">
-  </mat-form-field>
+  <form class="grid" [formGroup]="userForm" (ngSubmit)="onRegistrer()">
+    <mat-form-field class="col-12">
+      <mat-label>Usuario</mat-label>
+      <input type="text" matInput required placeholder="Nombre de usuario" formControlName="email">
+    </mat-form-field>
 
-  <mat-form-field>
-    <mat-label>Nombre</mat-label>
-    <input type="text" matInput placeholder="Nombre">
-  </mat-form-field>
+    <mat-form-field class="col-12 sm:col-6">
+      <mat-label>Nombre</mat-label>
+      <input type="text" matInput required placeholder="Nombre" formControlName="user">
+    </mat-form-field>
 
-  <mat-form-field>
-    <mat-label>Contraseña</mat-label>
-    <input type="password" matInput placeholder="Contraseña">
-  </mat-form-field>
+    <mat-form-field class="col-12 sm:col-6">
+      <mat-label>Contraseña</mat-label>
+      <input type="password" matInput required placeholder="Contraseña" formControlName="password">
+    </mat-form-field>
 
-  <button mat-button mat-flat-button color="primary">
-    <mat-icon>save</mat-icon>
-    Crear cuenta
-  </button>
-
+    <button mat-button mat-flat-button color="primary" class="col-12">
+      <mat-icon>save</mat-icon>
+      Crear cuenta
+    </button>
+  </form>
   <div class="flex justify-content-end mt-5">
-    <a routerLink="/auth/login">¿No tienes cuenta?</a>
+    <a routerLink="/auth/login" style="text-decoration: none; color:white">¿Ya tienes cuenta? Inicia sesión</a>
   </div>
 
 </div>

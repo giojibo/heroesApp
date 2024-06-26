@@ -39,6 +39,9 @@ export class NewPageComponent implements OnInit
   public publishers = [
     {id: 'DC Comics', desc:'DC - Comics'},
     {id: 'Marvel Comics', desc:'Marvel - Comics'},
+    {id: 'Shōnen Jump', desc:'Shōnen Jump'},
+    {id: 'Other', desc:'Other'}
+
   ];
 
   get currentHero(): Hero
@@ -120,5 +123,10 @@ export class NewPageComponent implements OnInit
         duration: 2500
       }
     )
+    this.router.navigate(['./']);
+  }
+  onCanceled(): void
+  {
+    this.router.navigate(['./']);
   }
 }

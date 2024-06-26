@@ -2,8 +2,39 @@
   "users": [
     {
       "id": 1,
-      "usuario": "John Doe",
-      "email": "john.due@gmail.com"
+      "user": "John Doe",
+      "email": "john.due@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "user": "Giovani",
+      "email": "bonillagiovani6@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 3,
+      "user": "Andres",
+      "email": "andres@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 4,
+      "user": "Uriel Lezama",
+      "email": "uriel@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 5,
+      "user": "Natalia",
+      "email": "natalia@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 6,
+      "user": "Armando",
+      "email": "armando@gmail.com",
+      "password": "1234"
     }
   ],
   "heroes": [
@@ -31,14 +62,6 @@
       "alter_ego": "Jay Garrick",
       "first_appearance": "Flash Comics #1",
       "characters": "Jay Garrick, Barry Allen, Wally West, Bart Allen"
-    },
-    {
-      "id": "dc-green",
-      "superhero": "Green Lantern",
-      "publisher": "DC Comics",
-      "alter_ego": "Alan Scott",
-      "first_appearance": "All-American Comics #16",
-      "characters": "Alan Scott, Hal Jordan, Guy Gardner, John Stewart, Kyle Raynor, Jade, Sinestro, Simon Baz"
     },
     {
       "id": "dc-wonder",
@@ -151,6 +174,69 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
+    },
+    {
+      "id": "ICCG4zP",
+      "superhero": "Scorpion",
+      "publisher": "Other",
+      "alter_ego": "Hanzo Hasashi",
+      "first_appearance": "1992 Mortal Kombat",
+      "characters": "Hanzo Hasashi, Mi ex, Pou, mi casimerito,",
+      "alt_img": "https://www.latercera.com/resizer/2pLAMkGk45A1X6YOblX4oGIQqNM=/380x570/smart/arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/FZLUMACP4RETPGOSJHCPLYM4WY.jpg"
+    },
+    {
+      "id": "0PhHzHx",
+      "superhero": "Goku",
+      "publisher": "Shōnen Jump",
+      "alter_ego": "Kakarotto",
+      "first_appearance": "1985 Dragon Ball",
+      "characters": "Goku, Goku Ultrainstinto",
+      "alt_img": "https://i.pinimg.com/736x/76/5e/b2/765eb2e408b5964fec81bca1fa1eb3fc.jpg"
+    },
+    {
+      "id": "tXxV-RC",
+      "superhero": "Vegeta",
+      "publisher": "Shōnen Jump",
+      "alter_ego": "Vegeta IV",
+      "first_appearance": "1988 Dragon Ball",
+      "characters": "Vegeta,  Vegeta Ultra Ego",
+      "alt_img": "https://e1.pxfuel.com/desktop-wallpaper/644/166/desktop-wallpaper-vegeta-ultra-ego-by-vexii6.jpg"
+    },
+    {
+      "id": "wx89Zon",
+      "superhero": "Sasuke",
+      "publisher": "Shōnen Jump",
+      "alter_ego": "Sasuke Uchiha",
+      "first_appearance": "1992 Naruto",
+      "characters": "Sasuke 6 caminos,  Akatsuki, Ego Hidari",
+      "alt_img": "https://i.pinimg.com/736x/03/14/bc/0314bc37c7308c1c0953e13d7cd661cb.jpg"
+    },
+    {
+      "id": "kCZpYAH",
+      "superhero": "Tilin",
+      "publisher": "Other",
+      "alter_ego": "Uriel Lezama",
+      "first_appearance": "2022",
+      "characters": "Jamaico, Reyna Gay, Ahuehuete",
+      "alt_img": "https://i1.sndcdn.com/artworks-dxHxWWBGJy6XJLWl-ESq2pw-t500x500.jpg"
+    },
+    {
+      "id": "ikmHcdA",
+      "superhero": "Dualingo",
+      "publisher": "Other",
+      "alter_ego": "Dualingo",
+      "first_appearance": "2022",
+      "characters": "Tronco, Danonino, Monte",
+      "alt_img": "https://pbs.twimg.com/media/FpwWIiaXsAArdt_.jpg"
+    },
+    {
+      "id": "ylctBpx",
+      "superhero": "Batman que rie ",
+      "publisher": "DC Comics",
+      "alter_ego": "Bruce Way",
+      "first_appearance": "2005 ",
+      "characters": "Doctor Manhatan, Joker, Bruce Way",
+      "alt_img": "https://w0.peakpx.com/wallpaper/339/212/HD-wallpaper-batman-que-rie-anime-comics-darck.jpg"
     }
   ]
 }

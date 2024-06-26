@@ -2,21 +2,21 @@
   <span class="text-lg mb-4">Login</span>
   <mat-form-field>
     <mat-label>Usuario</mat-label>
-    <input type="text" matInput placeholder="Nombre de usuario">
+    <input type="text" matInput placeholder="Nombre de usuario" [(ngModel)]="email" >
   </mat-form-field>
 
   <mat-form-field>
     <mat-label>Contraseña</mat-label>
-    <input type="password" matInput placeholder="Contraseña">
+    <input type="password" matInput placeholder="Contraseña" [(ngModel)]="password">
   </mat-form-field>
 
-  <button mat-button mat-flat-button color="primary">
-    <mat-icon>save</mat-icon>
+  <button mat-button mat-flat-button color="primary" (click)="onLogin()">
+    <mat-icon>login</mat-icon>
     Ingresar
   </button>
 
   <div class="flex justify-content-end mt-5">
-    <a routerLink="/auth/new-account">¿Ya tienes cuenta?</a>
+    <a routerLink="/auth/new-account" style="text-decoration: none; color:white">¿No tienes cuenta? Registrate</a>
   </div>
 
 </div>
