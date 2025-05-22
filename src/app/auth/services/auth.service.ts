@@ -29,33 +29,40 @@ export class AuthService
   }
 
   login(email: string, password: string): Observable<User | null>
-  {
-    return this.http.get<User[]>(`${this.baseUrl}/users?email=${email}&password=${password}`).pipe(
-      map( user => user.length > 0 ? user[0]: null),
-      tap(user => {
-        if (user) {
-          this.user = user;
-          localStorage.setItem('token', user.id.toString());
-        }
-      }),
-      catchError(error => {
-        console.error('Login failed', error);
-        return of(null);
-      })
-    );
-  }
+{
+  return this.http.get<User[]>(`${this.baseUrl}/users?email=${email}&password=${password}`).pipe(
+    map(users => users.length > 0 ? users[0] : null),
+    tap(user => {
+      console.log('Resultado del login:', user);  // <--- AÑADA ESTO
+      if (user) {
+        this.user = user;
+        localStorage.setItem('token', user.id.toString());
+      }
+    }),
+    catchError(error => {
+      console.error('Login fallido', error);
+      return of(null);
+    })
+  );
+}
 
   checkAuthentication(): Observable<boolean>
-  {
-    if(!localStorage.getItem('token')) return of(false);
+{
+  const token = localStorage.getItem('token');
+  if (!token) return of(false);
 
-    const token = localStorage.getItem('token');
-    return this.http.get<User>(`${this.baseUrl}/users/${token}`).pipe(
-      tap( user => this.user = user),
-      map( user => !!user),
-      catchError( error => of(false))
-    )
-  }
+  return this.http.get<User[]>(`${this.baseUrl}/users?id=${token}`).pipe(
+    map(users => {
+      if (users.length === 0) return false;
+      this.user = users[0];
+      return true;
+    }),
+    catchError(error => {
+      console.error('Error al verificar autenticación', error);
+      return of(false);
+    })
+  );
+}
 
   logout()
   {

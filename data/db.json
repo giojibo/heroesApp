@@ -35,6 +35,24 @@
       "user": "Armando",
       "email": "armando@gmail.com",
       "password": "1234"
+    },
+    {
+      "id": 7,
+      "user": "Andres",
+      "email": "Andresbb",
+      "password": "12345"
+    },
+    {
+      "id": 8,
+      "user": "Daniel",
+      "email": "Daniel23",
+      "password": "1234"
+    },
+    {
+      "id": 9,
+      "user": "Jose",
+      "email": "Jose",
+      "password": "123456"
     }
   ],
   "heroes": [
@@ -219,15 +237,6 @@
       "first_appearance": "2022",
       "characters": "Jamaico, Reyna Gay, Ahuehuete",
       "alt_img": "https://i1.sndcdn.com/artworks-dxHxWWBGJy6XJLWl-ESq2pw-t500x500.jpg"
-    },
-    {
-      "id": "ikmHcdA",
-      "superhero": "Dualingo",
-      "publisher": "Other",
-      "alter_ego": "Dualingo",
-      "first_appearance": "2022",
-      "characters": "Tronco, Danonino, Monte",
-      "alt_img": "https://pbs.twimg.com/media/FpwWIiaXsAArdt_.jpg"
     },
     {
       "id": "ylctBpx",
